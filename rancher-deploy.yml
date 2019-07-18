@@ -31,7 +31,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: personal-website
-        image: personal-website:latest
+        image: ${CICD_REGISTRY}/personal-website:latest
         imagePullPolicy: IfNotPresent
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: FallbackToLogsOnError
