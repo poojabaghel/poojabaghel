@@ -26,6 +26,7 @@ spec:
       hostAliases:
         - hostnames:
           - testhub.online
+          ip: 104.198.180.97
       imagePullSecrets:
       - name: pipeline-docker-registry
       containers:
