@@ -1,0 +1,18 @@
+stages:
+- name: Publish image personal-website
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: personal-website:latest
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./rancher-deploy.yml
+  when:
+    branch:
+      include:
+      - master
+branch:
+  include:
+  - master
