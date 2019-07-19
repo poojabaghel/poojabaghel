@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   name: personal-website-development
   annotations:
-    field.cattle.io/projectId: c-x4kpv:p-rqqdj
+    field.cattle.io/projectId: c-s7tqh:p-b28xd
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -26,7 +26,7 @@ spec:
       hostAliases:
         - hostnames:
           - testhub.online
-          ip: 104.198.180.97
+          ip: 35.225.145.109
       imagePullSecrets:
       - name: pipeline-docker-registry
       containers:
